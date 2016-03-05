@@ -225,3 +225,42 @@ label > input:checked + img {
   position: relative;
   top: 2px;
 }
+
+@media only screen and (max-device-width: 768px) {
+
+  .button {
+    height: 3em;
+    width: 5em;
+    font-size: 5em;
+    border-radius: .5em;
+  }
+
+  label > input + img {
+    height: 20em;
+    width: 20em;
+  }
+
+  .buttonDiv {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 8em;
+  }
+
+  h4 {
+    font-size: 7em;
+  }
+
+  h5 {
+    font-size: 5em;
+  }
+
+  .all-questions {
+    padding: 5%;
+  }
+  .answers {
+    width: 70%;
+  }
+    
+}

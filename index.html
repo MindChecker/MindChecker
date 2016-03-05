@@ -16,16 +16,16 @@
 </head>
 
 <body>
-  <header>
-    <!-- <a href="http://inclusiveclassrooms.co.uk"><img class="home-link" src="./assets/#" alt="inclusive classrooms" /></a> -->
-  </header>
+ <!--  <header>
+    <a href="http://inclusiveclassrooms.co.uk"><img class="home-link" src="./assets/#" alt="inclusive classrooms" /></a>
+  </header> -->
   <div id="whole-form" class="whole-form">
     <form id="ta-form">
       <div class="all-inputs">
         <div class="container-fluid">
           <div class="row">
             <div id="all-questions" class="all-questions col-md-10 col-md-offset-1">
-              <h2 class="questions-heading"> <i class="material-icons heading-icon">comment</i> Assessment Questionnaire</h2>
+              <!-- <h2 class="questions-heading"> <i class="material-icons heading-icon">comment</i> Assessment Questionnaire</h2> -->
               <div id="section-one" class="section">
                 <div class="question">
                   <h4>1. Personal Appearance</h4>
@@ -34,7 +34,7 @@
               </h5>
                   <div class="answers">
                     <label>
-                      <input type="radio" name="personal-appearance" value="3" class="always" />
+                      <input type="radio" name="personal-appearance" value="3" class="always" required />
                       <img src="./assets/face-always.svg" />
                     </label>
                     <label>
@@ -50,6 +50,9 @@
                       <img src="./assets/face-never.svg" />
                     </label>
                   </div>
+                  <div class="buttonDiv">
+                    <button class="button btn btn-primary submit col-md-offset-9 col-md-2" type="button">NEXT</button>
+                  </div>
                 </div>
                 <div class="question">
                   <h4>2. Appearance of Others</h4>
@@ -58,7 +61,7 @@
               </h5>
                   <div class="answers">
                     <label>
-                      <input type="radio" name="appearance-others" value="3" class="always" />
+                      <input type="radio" name="appearance-others" value="3" class="always" required/>
                       <img src="./assets/face-always.svg" />
                     </label>
                     <label>
@@ -73,6 +76,9 @@
                       <input type="radio" name="appearance-others" value="0" class="never" />
                       <img src="./assets/face-never.svg" />
                     </label>
+                  </div>
+                  <div class="buttonDiv">
+                    <button class="button btn btn-primary submit col-md-offset-9 col-md-2" type="button">NEXT</button>
                   </div>
                 </div>
                 <div class="question">
@@ -98,6 +104,9 @@
                       <img src="./assets/face-never.svg" />
                     </label>
                   </div>
+                  <div class="buttonDiv">
+                    <button class="button btn btn-primary submit col-md-offset-9 col-md-2" type="button">NEXT</button>
+                  </div>
                 </div>
                 <div class="question">
                   <h4>4. Dislikes</h4>
@@ -121,6 +130,9 @@
                       <input type="radio" name="dislikes" value="0" class="never" />
                       <img src="./assets/face-never.svg" />
                     </label>
+                  </div>
+                  <div class="buttonDiv">
+                    <button class="button btn btn-primary submit col-md-offset-9 col-md-2" type="button">NEXT</button>
                   </div>
                 </div>
                 <div class="question">
@@ -146,25 +158,17 @@
                       <img src="./assets/face-never.svg" />
                     </label>
                   </div>
+                  <div class="buttonDiv">
+                    <button class="button btn btn-primary submit col-md-offset-9 col-md-2" type="button">SUBMIT</button>
+                  </div>
                 </div>
               </div>
-          <div class="row">
-            <span class="required hidden col-md-offset-7 col-md-4"><i class="material-icons">&#xE000;</i> Please fill in all sections</span>
-          </div>
           <div class="row">
             <button class="button btn btn-primary submit col-md-offset-9 col-md-2" type="button">Submit</button>
           </div>
         </div>
       </div>
     </form>
-  </div>
-
-  <div id="wheel" class="wheel">
-    <div class="buttons">
-      <button id="new-form" class="button hidden btn btn-info">Start Again</button>
-      <a id="pdf" class="button inactive hidden btn btn-info" href="./skills-wheel.pdf" download target="_blank">Download as PDF</a>
-    </div>
-    <div id="wheel-container" class="wheel-container"></div>
   </div>
 
   <div class="cover">
