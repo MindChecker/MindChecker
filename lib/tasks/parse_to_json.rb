@@ -1,7 +1,7 @@
 require 'csv'
 require 'json'
 
-Dir.chdir("/Users/claudiocarmeli/projects/NHS_app/lib/tasks/")
+Dir.chdir("#{Dir.pwd}/lib/tasks/")
 gps = CSV.read('GP.csv')
 
 labels_in_string_form = gps[0][0]
