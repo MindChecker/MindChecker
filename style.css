@@ -340,6 +340,18 @@ label > input:checked + img {
   font-size: 1.6em;
 }
 
+#qanda h1{
+    font-size: 7em;
+    text-align: center;
+}
+
 #qanda li{
+    font-size: 5em;
+    text-align: center;
     list-style-type: none;
+}
+
+.buttonDiv a{
+    width: auto;
+    padding-top: 0.7em;
 }

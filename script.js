@@ -84,10 +84,38 @@ function getAnswers(form) {
       var node = document.createElement('li');
       node.appendChild(textNode);
       document.getElementById('qanda').appendChild(node);
+      score = score + parseInt(x.answer);
   });
+  var textNode = document.createTextNode('Your Score: ' + score);
+  var node = document.createElement('li');
+  node.appendChild(textNode);
+  document.getElementById('qanda').appendChild(node);
   console.log(formAnswers);
+  var textNode = document.createTextNode('Talk to someone');
+  var butt = document.createElement('a');
+  butt.href = 'helpMethods.html';
+  butt.classList.add('button');
+  butt.classList.add('btn');
+  butt.classList.add('submit');
+  butt.classList.add('col-md-offset-9');
+  butt.classList.add('col-md-2');
+  butt.classList.add('samsSpacing');
+  butt.appendChild(textNode);
+  var node = document.createElement('div');
+  node.classList.add('buttonDiv');
+  node.appendChild(butt);
+  document.getElementById('qanda').appendChild(node);
   return formAnswers;
 }
+
+// var a = document.getElementById('yourlinkId'); //or grab it by tagname etc
+// a.href = "somelink url"
+
+/*
+<div class="buttonDiv">
+  <button class="button btn  submit col-md-offset-9 col-md-2" type="button">NEXT</button>
+</div>
+*/
 
 
 function allFilled(){
