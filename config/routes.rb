@@ -2,9 +2,19 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {registrations: 'users/registrations'}
 
   root 'home#index'
+  resources :home, :only => [:index] do
+    collection do
+      get 'myself'
+      get 'helpMethods'
+      get 'school'
+      get 'work'
+      get 'gp'
+      get 'support_group'
+    end
+  end
 
   resources :practitioners, only: [:index]
-  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

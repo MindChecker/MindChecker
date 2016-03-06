@@ -5,7 +5,7 @@ class Practitioner < ActiveRecord::Base
     chosen_ones = []
     Practitioner.all.each do |practitioner|
       if practitioner.latitude.class == Float && practitioner.longitude.class == Float
-        
+
         # Angles
         theta_1 = (practitioner.latitude) * (Math::PI / 180)
         theta_2 = (reference['lat']) * (Math::PI / 180)
@@ -21,8 +21,7 @@ class Practitioner < ActiveRecord::Base
         c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a))
 
         # Distance
-        distance = EARTH_RADIUS * c 
-        
+        distance = EARTH_RADIUS * c
         chosen_ones << practitioner if distance <= distance_in_km
       end
     end
