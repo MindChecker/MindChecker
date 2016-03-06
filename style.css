@@ -262,5 +262,80 @@ label > input:checked + img {
   .answers {
     width: 70%;
   }
+
     
+}
+
+.start-page {
+  padding: 15% 5%;
+  text-align: center;
+}
+
+.start-button {
+  margin: 10%;
+  height: 5em;
+  width: 8em;
+  border-radius: 1em;
+}
+
+.method {
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.method h4 {
+  padding: 1.5em 0;
+  margin: 0;
+  color: white;
+}
+.method1 {
+  background-color: #FEB54A;
+}
+
+.method2 {
+  background-color: #A444F7;
+}
+
+.method3 {
+  background-color: #C1EA9F;
+}
+
+.method4 {
+  background-color: #41E5CD;
+}
+
+.help-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.map {
+  width: 100vw;
+  height: 70vh;
+  margin-bottom: 0;
+}
+
+.enterPostcode {
+  background-color: #41E5CD;
+  width: 100vw;
+  height: 30vh;
+}
+
+.postCodeInput {
+  width: 60%;
+  margin: 10% 20% 5% 20%;
+  height: 8vh;
+}
+
+.submitPostcode {
+  background-color: #ea5c37;
+  border-color: #ea5c37;
+  height: 8vh;
+  width: 60%;
+  margin: 0 20% 5% 20%;
+  border-radius: 1em;
+  color: white;
+  font-size: 1.6em;
 }
