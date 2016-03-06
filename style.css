@@ -263,7 +263,7 @@ label > input:checked + img {
     width: 70%;
   }
 
-    
+
 }
 
 .start-page {
@@ -338,4 +338,26 @@ label > input:checked + img {
   border-radius: 1em;
   color: white;
   font-size: 1.6em;
+}
+
+.qanda h1{
+    font-size: 7em;
+    text-align: center;
+}
+
+.qanda li{
+    font-size: 5em;
+    text-align: center;
+    list-style-type: none;
+}
+
+.buttonDiv a{
+    width: auto;
+    padding-top: 0.7em;
+}
+
+.special{
+    margin-top: 1em;
+    font-size: 6em;
+    font-weight: 900;
 }
