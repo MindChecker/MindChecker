@@ -1,0 +1,8 @@
+{"support_groups" :[
+    {"name":"The Tavistock Centre for Couple Relationships", "tel":"020 7380 1975", "address":"70 Warren St.", "address1":"London", "postcode":"W1T5PB", "lat":"51.524427", "long":"-0.138841", "tag":"relations"},
+    {"name":"Sitting and Befriending", "tel":"020 88316083", "address":"4 Waldegrave Road", "address1":"Teddington", "postcode":"TW118HT", "lat":"51.427572", "long":"-0.334170", "tag":"disability"},
+    {"name":"Hounslow Siblings Group", "tel":"07956918046", "address":"Oaklands School, Woodlands Road", "address1":"Isleworth", "postcode":"TW76JZ", "lat":"51.469860", "long":"-0.345796", "tag":"disability"},
+    {"name":"Alcoholics Anonymous", "tel":"020 7833 0022", "address":"3-5 Cynthia St", "address1":"London", "postcode":"N19JF", "lat":"51.531869", "long":"-0.113321", "tag":"substance_abuse"},
+ {"name":"Samaritans", "tel":"020 7734 2800", "address":"46 Marshall St, Soho", "address1":"London", "postcode":"W1F9BF", "lat":"51.512675", "long":"-0.137783", "tag":"emo_mental"},
+     {"name":"SANE", "tel":"020 38051790", "address":"St. Mark's Studios, St. Marys House", "address1":"14 Chillingworth Rd, London", "postcode":"N78QJ", "lat":"51.550309", "long":"-0.111376", "tag":"emo_mental"}
+]}

@@ -1,15 +1,15 @@
-class Practitioner < ActiveRecord::Base
+class SupportGroup < ActiveRecord::Base
   EARTH_RADIUS = 6371
 
   def self.all_near(reference, distance_in_km)
     chosen_ones = []
-    Practitioner.all.each do |practitioner|
-      if practitioner.latitude.class == Float && practitioner.longitude.class == Float
-        
+    SupportGroup.all.each do |support_group|
+      if support_group.latitude.class == Float && support_group.longitude.class == Float
+
         # Angles
-        theta_1 = (practitioner.latitude) * (Math::PI / 180)
+        theta_1 = (support_group.latitude) * (Math::PI / 180)
         theta_2 = (reference['lat']) * (Math::PI / 180)
-        lambda_1 = (practitioner.longitude) * (Math::PI / 180)
+        lambda_1 = (support_group.longitude) * (Math::PI / 180)
         lambda_2 = (reference['lng']) * (Math::PI / 180)
 
         # Differences
@@ -23,7 +23,7 @@ class Practitioner < ActiveRecord::Base
         # Distance
         distance = EARTH_RADIUS * c 
         
-        chosen_ones << practitioner if distance <= distance_in_km
+        chosen_ones << support_group if distance <= distance_in_km
       end
     end
     chosen_ones
