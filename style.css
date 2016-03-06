@@ -355,3 +355,7 @@ label > input:checked + img {
     width: auto;
     padding-top: 0.7em;
 }
+
+.buttonDiv{
+    margin-top: 4em;
+}

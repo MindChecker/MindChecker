@@ -91,6 +91,14 @@ function getAnswers(form) {
   node.appendChild(textNode);
   document.getElementById('qanda').appendChild(node);
   console.log(formAnswers);
+  var textNode = document.createTextNode('With a score less than 5,');
+  var node = document.createElement('li');
+  node.appendChild(textNode);
+  document.getElementById('qanda').appendChild(node);
+  var textNode = document.createTextNode('you should talk to someone');
+  var node = document.createElement('li');
+  node.appendChild(textNode);
+  document.getElementById('qanda').appendChild(node);
   var textNode = document.createTextNode('Talk to someone');
   var butt = document.createElement('a');
   butt.href = 'helpMethods.html';
