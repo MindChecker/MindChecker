@@ -78,18 +78,26 @@ function getAnswers(form) {
   var textNode = document.createTextNode('Your Results');
   var node = document.createElement('h1');
   node.appendChild(textNode);
-  document.getElementById('qanda').appendChild(node);
+  document.getElementsByClassName('qanda')[0].appendChild(node);
   formAnswers.forEach(function(x){
       var textNode = document.createTextNode(x.question + ': ' + x.answer);
       var node = document.createElement('li');
       node.appendChild(textNode);
-      document.getElementById('qanda').appendChild(node);
-      score = score + parseInt(x.answer);
+      document.getElementsByClassName('qanda')[0].appendChild(node);
+    //   score = score + x.answer;
+    if(x.answer === "problem" || x.answer === "may be problem" || x.answer === "not coping well"){
+        score++;
+    }
   });
-  var textNode = document.createTextNode('Your Score: ' + score);
+  console.log(score);
+  if(score>0){
+      var textNode = document.createTextNode("You may have a problem");
+  }
+  else{var textNode = document.createTextNode('You seem well, keep monitoring your health');}
   var node = document.createElement('li');
+  node.classList.add('special');
   node.appendChild(textNode);
-  document.getElementById('qanda').appendChild(node);
+  document.getElementsByClassName('qanda')[0].appendChild(node);
   console.log(formAnswers);
   var textNode = document.createTextNode('Talk to someone');
   var butt = document.createElement('a');
@@ -104,7 +112,7 @@ function getAnswers(form) {
   var node = document.createElement('div');
   node.classList.add('buttonDiv');
   node.appendChild(butt);
-  document.getElementById('qanda').appendChild(node);
+  document.getElementsByClassName('qanda')[0].appendChild(node);
   return formAnswers;
 }
 

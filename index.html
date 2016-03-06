@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Skills Wheel</title>
+  <title>Mind Checker</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
@@ -28,26 +28,18 @@
               <!-- <h2 class="questions-heading"> <i class="material-icons heading-icon">comment</i> Assessment Questionnaire</h2> -->
               <div id="section-one" class="section">
                 <div class="question q1">
-                  <h4>1. Personal Appearance</h4>
+                  <h4>1. Depression</h4>
                   <h5>
-                Are they able to identify at least three features of their personal appearance e.g. colour hair, colour eyes, height, clothing?
-              </h5>
+                      Are you feeling down? Depressed? or Hopeless?
+                  </h5>
                   <div class="answers">
                     <label>
-                      <input type="radio" name="personal-appearance" value="3" class="always" required />
-                      <img src="./assets/face-always.svg" />
+                      <input type="radio" name="depression" value="problem" class="always" required />
+                      <img src="./assets/tick.png" />
                     </label>
                     <label>
-                      <input type="radio" name="personal-appearance" value="2" class="sometimes" />
-                      <img src="./assets/face-sometimes.svg" />
-                    </label>
-                    <label>
-                      <input type="radio" name="personal-appearance" value="1" class="rarely" />
-                      <img src="./assets/face-rarely.svg" />
-                    </label>
-                    <label>
-                      <input type="radio" name="personal-appearance" value="0" class="never" />
-                      <img src="./assets/face-never.svg" />
+                      <input type="radio" name="depression" value="fine" class="sometimes" />
+                      <img src="./assets/cross.png" />
                     </label>
                   </div>
                   <div class="buttonDiv">
@@ -55,109 +47,77 @@
                   </div>
                 </div>
                 <div class="question q2 hidden">
-                  <h4>2. Appearance of Others</h4>
+                  <h4>2. Addiction</h4>
                   <h5>
-                Are they able to identify at least three features of others’ personal appearance e.g. colour hair, colour eyes, height, clothing?
-              </h5>
-                  <div class="answers">
-                    <label>
-                      <input type="radio" name="appearance-others" value="3" class="always" required/>
-                      <img src="./assets/face-always.svg" />
-                    </label>
-                    <label>
-                      <input type="radio" name="appearance-others" value="2" class="sometimes" />
-                      <img src="./assets/face-sometimes.svg" />
-                    </label>
-                    <label>
-                      <input type="radio" name="appearance-others" value="1" class="rarely" />
-                      <img src="./assets/face-rarely.svg" />
-                    </label>
-                    <label>
-                      <input type="radio" name="appearance-others" value="0" class="never" />
-                      <img src="./assets/face-never.svg" />
-                    </label>
-                  </div>
+                    Are you (or someone you know) struggling with addiction?
+                  </h5>
+              <div class="answers">
+                <label>
+                  <input type="radio" name="addiction" value="problem" class="always" required />
+                  <img src="./assets/tick.png" />
+                </label>
+                <label>
+                  <input type="radio" name="addiction" value="fine" class="sometimes" />
+                  <img src="./assets/cross.png" />
+                </label>
+              </div>
                   <div class="buttonDiv">
                     <button class="button btn  submit col-md-offset-9 col-md-2" type="button">NEXT</button>
                   </div>
                 </div>
                 <div class="question q3 hidden">
-                  <h4>3. Likes</h4>
+                  <h4>3. Conflict-zone</h4>
                   <h5>
-                Can they identify at least three things that they like?
+                Have you come from a conflict zone?
               </h5>
-                  <div class="answers">
-                    <label>
-                      <input type="radio" name="likes" value="3" class="always" />
-                      <img src="./assets/face-always.svg" />
-                    </label>
-                    <label>
-                      <input type="radio" name="likes" value="2" class="sometimes" />
-                      <img src="./assets/face-sometimes.svg" />
-                    </label>
-                    <label>
-                      <input type="radio" name="likes" value="1" class="rarely" />
-                      <img src="./assets/face-rarely.svg" />
-                    </label>
-                    <label>
-                      <input type="radio" name="likes" value="0" class="never" />
-                      <img src="./assets/face-never.svg" />
-                    </label>
-                  </div>
+              <div class="answers">
+                <label>
+                  <input type="radio" name="conflict-zone" value="may be problem" class="always" required />
+                  <img src="./assets/tick.png" />
+                </label>
+                <label>
+                  <input type="radio" name="conflict-zone" value="not relevant" class="sometimes" />
+                  <img src="./assets/cross.png" />
+                </label>
+              </div>
                   <div class="buttonDiv">
                     <button class="button btn  submit col-md-offset-9 col-md-2" type="button">NEXT</button>
                   </div>
                 </div>
                 <div class="question q4 hidden">
-                  <h4>4. Dislikes</h4>
+                  <h4>4. Self Image</h4>
                   <h5>
-                Can they identify at least three things that they dislike?
-              </h5>
-                  <div class="answers">
-                    <label>
-                      <input type="radio" name="dislikes" value="3" class="always" />
-                      <img src="./assets/face-always.svg" />
-                    </label>
-                    <label>
-                      <input type="radio" name="dislikes" value="2" class="sometimes" />
-                      <img src="./assets/face-sometimes.svg" />
-                    </label>
-                    <label>
-                      <input type="radio" name="dislikes" value="1" class="rarely" />
-                      <img src="./assets/face-rarely.svg" />
-                    </label>
-                    <label>
-                      <input type="radio" name="dislikes" value="0" class="never" />
-                      <img src="./assets/face-never.svg" />
-                    </label>
-                  </div>
+                Are you having problems with your self-image?
+                </h5>
+                <div class="answers">
+                  <label>
+                    <input type="radio" name="self image" value="problem" class="always" required />
+                    <img src="./assets/tick.png" />
+                  </label>
+                  <label>
+                    <input type="radio" name="self image" value="fine" class="sometimes" />
+                    <img src="./assets/cross.png" />
+                  </label>
+                </div>
                   <div class="buttonDiv">
                     <button class="button btn  submit col-md-offset-9 col-md-2" type="button">NEXT</button>
                   </div>
                 </div>
                 <div class="question q5 hidden">
-                  <h4>5. Strengths</h4>
+                  <h4>5. Now</h4>
                   <h5>
-                Can they identify something that they feel they are good at?
+                Are you coping now?
               </h5>
-                  <div class="answers">
-                    <label>
-                      <input type="radio" name="strengths" value="3" class="always" />
-                      <img src="./assets/face-always.svg" />
-                    </label>
-                    <label>
-                      <input type="radio" name="strengths" value="2" class="sometimes" />
-                      <img src="./assets/face-sometimes.svg" />
-                    </label>
-                    <label>
-                      <input type="radio" name="strengths" value="1" class="rarely" />
-                      <img src="./assets/face-rarely.svg" />
-                    </label>
-                    <label>
-                      <input type="radio" name="strengths" value="0" class="never" />
-                      <img src="./assets/face-never.svg" />
-                    </label>
-                  </div>
+              <div class="answers">
+                <label>
+                  <input type="radio" name="now" value="coping well" class="always" required />
+                  <img src="./assets/face-always.svg" />
+                </label>
+                <label>
+                  <input type="radio" name="now" value="not coping well" class="sometimes" />
+                  <img src="./assets/face-never.svg" />
+                </label>
+              </div>
                   <div class="buttonDiv">
                     <button class="button btn  submit col-md-offset-9 col-md-2" type="button">SUBMIT</button>
                   </div>
@@ -172,7 +132,7 @@
   </div>
 
   <div class="cover">
-      <ul id="qanda"></ul>
+      <ul class="qanda"></ul>
   </div>
 
   <script type="text/javascript" src="script.js"></script>
