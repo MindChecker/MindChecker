@@ -4,8 +4,39 @@ var newFormButton = document.getElementById('new-form');
 var pdfButton  = $("#pdf");
 var questions = ["personal-appearance","appearance-others","likes","dislikes","strengths"];
 
+var score = 0;
+
 document.getElementsByClassName('button')[0].addEventListener('click', function(e){
     console.log('clicked');
+    document.getElementsByClassName('q1')[0].classList.add('hidden');
+    document.getElementsByClassName('q2')[0].classList.remove('hidden');
+    if(allFilled()){
+        getAnswers(form);
+    }
+});
+
+document.getElementsByClassName('button')[1].addEventListener('click', function(e){
+    console.log('clicked');
+    document.getElementsByClassName('q2')[0].classList.add('hidden');
+    document.getElementsByClassName('q3')[0].classList.remove('hidden');
+    if(allFilled()){
+        getAnswers(form);
+    }
+});
+
+document.getElementsByClassName('button')[2].addEventListener('click', function(e){
+    console.log('clicked');
+    document.getElementsByClassName('q3')[0].classList.add('hidden');
+    document.getElementsByClassName('q4')[0].classList.remove('hidden');
+    if(allFilled()){
+        getAnswers(form);
+    }
+});
+
+document.getElementsByClassName('button')[3].addEventListener('click', function(e){
+    console.log('clicked');
+    document.getElementsByClassName('q4')[0].classList.add('hidden');
+    document.getElementsByClassName('q5')[0].classList.remove('hidden');
     if(allFilled()){
         getAnswers(form);
     }
@@ -41,19 +72,21 @@ function getAnswers(form) {
 
 function allFilled(){
 
-  // var detailsFilled = Array.prototype.slice.call(document.getElementsByClassName('student-details'));
-  // var answeredDetails = detailsFilled.filter(function(el){
-  //   return el.value;
-  // });
-  // var unansweredDetails = detailsFilled.filter(function(el){
-  //   return !el.value;
-  // }).map(function(el){
-  //   return el.name;
-  // });
+  var detailsFilled = Array.prototype.slice.call(document.getElementsByClassName('student-details'));
+  var answeredDetails = detailsFilled.filter(function(el){
+      console.log(el.value);
+    return el.value;
+  });
+  var unansweredDetails = detailsFilled.filter(function(el){
+    return !el.value;
+  }).map(function(el){
+    return el.name;
+  });
 
   var questionsAnswered = questions.map(function(el){
     var answered =  Array.prototype.slice.call(document.getElementsByName(el)).filter(function(el, i){
-        console.log('answered ---- ', el, i);
+        // console.log('answered ---- ', el.);
+        // console.log(el);
       return el.checked;
     });
     return answered.length || el;
