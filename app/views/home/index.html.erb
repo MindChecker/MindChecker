@@ -1,0 +1,5 @@
+<%= form_tag practitioners_path, remote: true, method: 'get' do %>
+  <%= label_tag :postcode %>
+  <%= text_field_tag :postcode %>
+  <%= submit_tag 'Search' %>
+<% end %>
