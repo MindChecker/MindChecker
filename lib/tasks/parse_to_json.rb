@@ -1,5 +1,4 @@
-require 'CSV'
-require 'pry'
+require 'csv'
 require 'json'
 
 Dir.chdir("/Users/claudiocarmeli/projects/NHS_app/lib/tasks/")
@@ -18,11 +17,6 @@ gps.each_with_index do |line, i|
   end
   results << result
 end
-
-# results = results.to_json
-# binding.pry
-# file = File.new('gps.json')
-# File.open(file, 'w')
 
 File.open('gps.json', 'w') do |f|
   f.puts results.to_json
