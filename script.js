@@ -42,6 +42,21 @@ document.getElementsByClassName('button')[3].addEventListener('click', function(
     }
 });
 
+document.getElementsByClassName('button')[3].addEventListener('click', function(e){
+    console.log('clicked');
+    document.getElementsByClassName('q4')[0].classList.add('hidden');
+    document.getElementsByClassName('q5')[0].classList.remove('hidden');
+    if(allFilled()){
+        getAnswers(form);
+    }
+});
+
+document.getElementsByClassName('button')[4].addEventListener('click', function(e){
+    console.log('clicked');
+    document.getElementsByClassName('q5')[0].classList.add('hidden');
+    getAnswers(form);
+});
+
 newFormButton.addEventListener("click", function(e){
   wholeForm.removeClass("hidden");
   pdfButton.addClass("hidden inactive");
@@ -60,12 +75,17 @@ function getAnswers(form) {
     array.push(obj);
     return array;
   },[]);
+  var textNode = document.createTextNode('Your Results');
+  var node = document.createElement('h1');
+  node.appendChild(textNode);
+  document.getElementById('qanda').appendChild(node);
   formAnswers.forEach(function(x){
       var textNode = document.createTextNode(x.question + ': ' + x.answer);
       var node = document.createElement('li');
       node.appendChild(textNode);
       document.getElementById('qanda').appendChild(node);
   });
+  console.log(formAnswers);
   return formAnswers;
 }
 
@@ -85,7 +105,7 @@ function allFilled(){
 
   var questionsAnswered = questions.map(function(el){
     var answered =  Array.prototype.slice.call(document.getElementsByName(el)).filter(function(el, i){
-        // console.log('answered ---- ', el.);
+        console.log('answered ---- ', el, i);
         // console.log(el);
       return el.checked;
     });
