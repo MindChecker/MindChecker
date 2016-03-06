@@ -1,7 +1,6 @@
 require 'json'
-require 'pry'
 
-JSON.parse(open("/Users/claudiocarmeli/projects/NHS_app/lib/tasks/gps.json").read).each do |gp|
+JSON.parse(open("#{Dir.pwd}/lib/tasks/gps.json").read).each do |gp|
 
   gp_as_json = {}
   gp_as_json["name"] = gp["OrganisationName"]
